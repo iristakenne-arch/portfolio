@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irista Kenne — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts : Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       LOADER
+  ═══════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-letter">I</span>
+      <span class="loader-letter">K</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">IK<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">À Propos</a></li>
+        <li><a href="#skills"     class="nav-link">Compétences</a></li>
+        <li><a href="#projects"   class="nav-link">Projets</a></li>
+        <li><a href="#gallery"    class="nav-link">Galerie</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Mode sombre -->
+        <button id="themeToggle" class="icon-btn" aria-label="Changer de thème">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun"  class="icon-sun"></i>
+        </button>
+        <!-- Hamburger mobile -->
+        <button id="menuToggle" class="icon-btn hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="section-hero">
+    <div class="hero-container">
+
+      <!-- Texte à gauche -->
+      <div class="hero-text reveal-left">
+        <p class="hero-eyebrow">Bonjour, je suis</p>
+        <h1 class="hero-name">Irista<br /><em>Kenne</em></h1>
+        <p class="hero-slogan">Passionnée de digital et de pâtisserie</p>
+
+        <!-- Effet typing -->
+        <div class="hero-typing-wrap">
+          <span class="typing-prefix">Je suis </span>
+          <span id="typingText" class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact"  class="btn btn-outline">Me contacter</a>
+        </div>
+
+        <!-- Réseaux rapides -->
+        <div class="hero-socials">
+          <a href="#contact" aria-label="LinkedIn"   class="social-link"><i data-lucide="linkedin"></i></a>
+          <a href="#contact" aria-label="Instagram"  class="social-link"><i data-lucide="instagram"></i></a>
+          <a href="#contact" aria-label="WhatsApp"   class="social-link"><i data-lucide="message-circle"></i></a>
+          <a href="#contact" aria-label="Email"      class="social-link"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+
+      <!-- Photo à droite -->
+      <div class="hero-photo-wrap reveal-right">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-circle">
+            <!-- Remplacez src par votre vraie photo -->
+            <img
+              src="/image/5.jpeg"
+              alt="Irista Kenne"
+              class="hero-img" 
+            />
+          </div>
+          <div class="photo-badge">
+            <span>🎓</span> Génie Informatique
+          </div>
+        </div>
+        <!-- Décorations géométriques -->
+        <div class="geo geo-1"></div>
+        <div class="geo geo-2"></div>
+        <div class="geo geo-3"></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       À PROPOS
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01 — À Propos</span>
+        <h2 class="section-title">Qui suis-je ?</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">
+            Étudiante en première année de <strong>Génie Informatique</strong>, je combine ma passion pour les technologies numériques avec une forte sensibilité créative.
+          </p>
+          <p>
+            Formée en <strong>Community Management</strong> et <strong>Création de Contenu</strong>, je sais construire une présence en ligne impactante et engageante. J'aime concevoir des expériences visuelles qui racontent une histoire.
+          </p>
+          <p>
+            En dehors du digital, la <strong>pâtisserie</strong> est mon art de vivre. Créer de belles douceurs m'apprend la précision, la patience et le soin du détail — des qualités que je transpose dans chacun de mes projets.
+          </p>
+          <p>
+            Mon objectif : devenir une <strong>développeuse full-stack</strong> polyvalente, alliant expertise technique et vision créative, pour concevoir des solutions numériques à fort impact.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">Génie Informatique</span>
+            <span class="tag">Community Management</span>
+            <span class="tag">Création de contenu</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">Pâtisserie</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal-right">
+          <div class="info-card glass">
+            <div class="info-card-icon"><i data-lucide="graduation-cap"></i></div>
+            <h4>Formation</h4>
+            <p>Niveau 1 — Génie Informatique<br />Formation Community Management<br />Création de Contenu Digital</p>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon"><i data-lucide="target"></i></div>
+            <h4>Objectif</h4>
+            <p>Développer des solutions numériques innovantes et bâtir une marque personnelle forte dans le digital.</p>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon"><i data-lucide="heart"></i></div>
+            <h4>Passions</h4>
+            <p>Pâtisserie artisanale, design visuel, storytelling, photographie culinaire et culture digitale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COMPÉTENCES
+  ═══════════════════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02 — Compétences</span>
+        <h2 class="section-title">Mon expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Informatique -->
+        <div class="skills-col reveal-left">
+          <h3 class="skills-col-title"><i data-lucide="code-2"></i> Compétences Techniques</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-percent="80">
+              <div class="skill-info"><span>HTML5</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="70">
+              <div class="skill-info"><span>CSS3 / Sass</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="48">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="50">
+              <div class="skill-info"><span>Figma / UI-UX</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="78">
+              <div class="skill-info"><span>Python (bases)</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital -->
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title"><i data-lucide="megaphone"></i> Community & Contenu</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-percent="75">
+              <div class="skill-info"><span>Canva Design</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="56">
+              <div class="skill-info"><span>Réseaux Sociaux</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="56">
+              <div class="skill-info"><span>Création de Contenu</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="56">
+              <div class="skill-info"><span>Stratégie Éditoriale</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="45">
+              <div class="skill-info"><span>Photographie / Montage</span><span class="skill-pct">0%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="skills-col reveal-right">
+          <h3 class="skills-col-title"><i data-lucide="sparkles"></i> Soft Skills</h3>
+          <div class="soft-skills">
+            <div class="soft-skill-pill"><i data-lucide="lightbulb"></i> Créativité</div>
+            <div class="soft-skill-pill"><i data-lucide="users"></i> Travail d'équipe</div>
+            <div class="soft-skill-pill"><i data-lucide="clock"></i> Organisation</div>
+            <div class="soft-skill-pill"><i data-lucide="trending-up"></i> Adaptabilité</div>
+            <div class="soft-skill-pill"><i data-lucide="message-square"></i> Communication</div>
+            <div class="soft-skill-pill"><i data-lucide="search"></i> Curiosité</div>
+            <div class="soft-skill-pill"><i data-lucide="star"></i> Sens du détail</div>
+            <div class="soft-skill-pill"><i data-lucide="zap"></i> Proactivité</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJETS
+  ═══════════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03 — Projets</span>
+        <h2 class="section-title">Mes réalisations</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card glass reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <img src="/image/2.jpeg" alt="Site pâtisserie" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">HTML / CSS</span>
+            <h3>Site Pâtisserie</h3>
+            <p>Site vitrine élégant pour une pâtisserie artisanale avec catalogue de produits, galerie et formulaire de commande.</p>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-delay="100">
+          <div class="project-img-wrap">
+            <img src="/image/4.jpeg" alt="Mini projets HTML CSS" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">HTML / CSS / JS</span>
+            <h3>Mini Projets Web</h3>
+            <p>Collection de composants interactifs : landing pages, calculatrices, sliders et animations CSS avancées.</p>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-delay="200">
+          <div class="project-img-wrap">
+            <img src="/image/WhatsApp Image 2026-05-25 at 00.07.50.jpeg" alt="Créations Canva" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Canva Design</span>
+            <h3>Créations Graphiques</h3>
+            <p>Visuels pour réseaux sociaux, affiches événementielles, brandbooks et identités visuelles complètes.</p>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <img src="/image/7.jpeg" alt="Contenus réseaux sociaux" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Community Management</span>
+            <h3>Stratégie Social Media</h3>
+            <p>Gestion et création de contenus engageants pour Instagram et Facebook avec calendriers éditoriaux.</p>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-delay="100">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&q=80" alt="Maquettes UI/UX" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Figma / UI-UX</span>
+            <h3>Maquettes UI/UX</h3>
+            <p>Wireframes et prototypes interactifs pour applications mobiles et sites web avec design systems cohérents.</p>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-delay="200">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Boutique en ligne" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-outline-light">Voir plus <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag">E-commerce</span>
+            <h3>Boutique Digitale</h3>
+            <p>Concept de boutique en ligne dédiée aux produits artisanaux avec UX soignée et identité visuelle forte.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALERIE
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04 — Galerie</span>
+        <h2 class="section-title">Créations & Pâtisseries</h2>
+        <p class="section-sub">Un aperçu de mes univers créatifs — entre code, design et douceurs.</p>
+      </div>
+
+      <!-- Filtres -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="pastry">Pâtisserie</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item pastry reveal" data-delay="0">
+          <img src="/image/3.jpeg" alt="Gâteau élégant" />
+          <div class="gallery-overlay"><span>Entremets chocolat</span></div>
+        </div>
+        <div class="gallery-item digital reveal" data-delay="50">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80" alt="Design digital" />
+          <div class="gallery-overlay"><span>Brand Identity</span></div>
+        </div>
+        <div class="gallery-item pastry reveal" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Macarons" />
+          <div class="gallery-overlay"><span>Macarons gourmands</span></div>
+        </div>
+        <div class="gallery-item digital reveal" data-delay="150">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80" alt="Réseaux sociaux" />
+          <div class="gallery-overlay"><span>Social Media Kit</span></div>
+        </div>
+        <div class="gallery-item pastry reveal" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500&q=80" alt="Tarte fruitée" />
+          <div class="gallery-overlay"><span>Tarte aux fruits</span></div>
+        </div>
+        <div class="gallery-item digital reveal" data-delay="250">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=500&q=80" alt="UI Design" />
+          <div class="gallery-overlay"><span>App UI Design</span></div>
+        </div>
+        <div class="gallery-item pastry reveal" data-delay="300">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&q=80" alt="Cupcakes" />
+          <div class="gallery-overlay"><span>Cupcakes vanille</span></div>
+        </div>
+        <div class="gallery-item digital reveal" data-delay="350">
+          <img src="/image/6.jpeg" alt="Portfolio web" />
+          <div class="gallery-overlay"><span>Web Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">05 — Contact</span>
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <p class="section-sub">Une idée de projet ? Une collaboration ? N'hésitez pas à me contacter.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Infos contact -->
+        <div class="contact-info reveal-left">
+          <a href="mailto:irista.kenne@email.com" class="contact-item glass">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">irista.kenne@email.com</span>
+            </div>
+          </a>
+          <a href="https://wa.me/+237600000000" class="contact-item glass" target="_blank" rel="noopener">
+            <div class="contact-icon"><i data-lucide="message-circle"></i></div>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-val">+237 694209639 </span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/iristakenne" class="contact-item glass" target="_blank" rel="noopener">
+            <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-val">Irista Kenne</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/iristakenne" class="contact-item glass" target="_blank" rel="noopener">
+            <div class="contact-icon"><i data-lucide="instagram"></i></div>
+            <div>
+              <span class="contact-label">Instagram</span>
+              <span class="contact-val">@iristakenne</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form glass" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="fname" placeholder="Votre prénom" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lname" placeholder="Votre nom" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Envoyer le message <i data-lucide="send"></i>
+            </button>
+            <p class="form-success" id="formSuccess">✓ Message envoyé ! Je vous répondrai très vite.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">IK<span class="dot">.</span></p>
+      <p class="footer-copy">© 2026 Irista Kenne — Tous droits réservés.</p>
+      <div class="footer-socials">
+        <a href="#contact" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="#contact" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#contact" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
